@@ -25,7 +25,7 @@ while (true) {
                 prompt(`
                 Saldo: ${saldo}
                 Escolha a opcao: 
-                1. 5MT-40 MB
+                1. 5MT- 40 MB
                 2. 10MT-80 MB
                 3. 15MT-120 MB
                 4. 20MT-160 MB
@@ -60,7 +60,9 @@ while (true) {
             break;
         case 3:
            
-            consultarSaldo(3);
+        prompt(`
+            Saldo: ${saldo}
+            `)
             break;
     
         case 4:
@@ -97,7 +99,7 @@ function comprarMegas(opcaoMegas) {
                 alert("Saldo Insuficiente");
             } else {
                 saldo = saldo - 5;
-                alert(`Parabens! Acaba de comprar 8MT de megas. Saldo ${saldo}`);
+                alert(`Parabens! Acaba de comprar 40MB. Saldo ${saldo}`);
             }
             break;
         case 2:
@@ -105,7 +107,7 @@ function comprarMegas(opcaoMegas) {
                 alert("Saldo Insuficiente");
             } else {
                 saldo = saldo - 10;
-                alert(`Parabens! Acaba de comprar 12MT de megas. Saldo ${saldo}`);
+                alert(`Parabens! Acaba de comprar 80MB. Saldo ${saldo}`);
             }
             break;
         case 3:
@@ -113,7 +115,7 @@ function comprarMegas(opcaoMegas) {
                 alert("Saldo Insuficiente");
             } else {
                 saldo = saldo - 15;
-                alert(`Parabens! Acaba de comprar 30MT de megas. Saldo ${saldo}`);
+                alert(`Parabens! Acaba de comprar 120MB. Saldo ${saldo}`);
             }
             break;
         case 4:
@@ -121,7 +123,7 @@ function comprarMegas(opcaoMegas) {
                 alert("Saldo Insuficiente");
             } else {
                 saldo = saldo - 20;
-                alert(`Parabens! Acaba de comprar 80MT de megas. Saldo ${saldo}`);
+                alert(`Parabens! Acaba de comprar 160MB de megas. Saldo ${saldo}`);
             }
             break;
         default:
@@ -171,7 +173,7 @@ function comprarMegas(opcaoMegas) {
         }
  }
  let consultarSaldo=() =>saldo ;
- console.log(consultarSaldo($saldo));
+ alert(saldo);
  function comprarTxuna(opcaoTxuna){
     if(opcaoTxuna==1){
         saldo =  saldo +50;
@@ -180,6 +182,6 @@ function comprarMegas(opcaoMegas) {
     }else{
         saldo =  saldo + 30;
     }
-    alert('o novo saldo e.  ${saldo}');    
+    alert(saldo);    
     
  }
